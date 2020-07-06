@@ -33,5 +33,5 @@ tags: [Python, GUI Programming, Tkinter]
 
 ## Sources
 
-- "https://realpython.com/python-gui-tkinter/"
-- "https://tkdocs.com/index.html"
+- https://realpython.com/python-gui-tkinter/
+- https://tkdocs.com/index.html
