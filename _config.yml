@@ -1,7 +1,7 @@
 # --- Basic options --- #
 
 # Name of website
-title: Vũ Văn Tuấn' website
+title: Vũ Văn Tuấn
 
 # Short description of your site
 description: A virtual proof that I'm awesome
@@ -13,6 +13,8 @@ author: Vũ Văn Tuấn
 
 navbar-links:
   About Me: "aboutme"
+  
+  Projects:
   
   Mathematical resources:
     - MIT OpenCourseWare: "https://ocw.mit.edu/courses/mathematics/"
