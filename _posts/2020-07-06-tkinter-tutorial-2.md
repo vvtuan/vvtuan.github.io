@@ -4,7 +4,7 @@ title: "Tkinter Tutorial"
 subtitle: "Một số kinh nghiệm khi sử dụng Tkinter"
 date:   2020-07-06
 categories: [Python GUI Programming]
-tags: [Python, GUI Programming, Tkinter]
+tags: [Python, GUI, Tkinter]
 ---
 
 # Tkinter Tutorial
