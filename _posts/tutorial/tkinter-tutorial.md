@@ -3,6 +3,7 @@ layout: post
 title: "Tkinter Tutorial"
 subtitle: "Một số kinh nghiệm khi sử dụng Tkinter"
 date:   2020-07-06
+gh-repo: vvtuan/tutorial
 categories: [Python GUI Programming
 tags: [Python, GUI Programming, Tkinter]
 ---
