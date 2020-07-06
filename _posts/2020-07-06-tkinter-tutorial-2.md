@@ -7,7 +7,7 @@ categories: [Python GUI Programming]
 tags: [Python, GUI Programming, Tkinter]
 ---
 
-# Tkinter Tutorial AAAAAAAA
+# Tkinter Tutorial
 
 ## Widgets
 
