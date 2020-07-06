@@ -13,10 +13,10 @@ author: Vũ Văn Tuấn
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+#   Resources:
+#     - Beautiful Jekyll: "https://beautifuljekyll.com"
+#     - Learn markdown: "https://www.markdowntutorial.com/"
+#   Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
@@ -38,10 +38,10 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "vvtuan@github.com"
-  facebook: vvtuan
+#   email: "vvtuan@github.com"
+#   facebook: vvtuan
   github: vvtuan
-  twitter: vvtuan
+#   twitter: vvtuan
   rss: true
 #  reddit: yourname
 #  linkedin: daattali
