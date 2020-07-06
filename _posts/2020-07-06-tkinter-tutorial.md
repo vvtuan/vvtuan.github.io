@@ -33,6 +33,6 @@ tags: [Python, GUI, Tkinter]
 
 ## Sources
 
-- [](https://stackoverflow.com/)
-- [](https://realpython.com/python-gui-tkinter/)
-- [](https://tkdocs.com/index.html)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Real Python](https://realpython.com/python-gui-tkinter/)
+- [TkDocs](https://tkdocs.com/index.html)
