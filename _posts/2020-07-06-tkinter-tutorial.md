@@ -9,6 +9,14 @@ tags: [Python, GUI, Tkinter]
 
 # Tkinter Tutorial
 
+## Tk Concepts
+
+### Widgets
+
+### Geometry Management
+
+### Event Handling
+
 ## Widgets
 
 ## Geometry Manager
@@ -35,4 +43,4 @@ tags: [Python, GUI, Tkinter]
 
 - [Stack Overflow](https://stackoverflow.com/)
 - [Real Python](https://realpython.com/python-gui-tkinter/)
-- [TkDocs](https://tkdocs.com/index.html)
+- [TkDocs](https://tkdocs.com/tutorial/index.html)
