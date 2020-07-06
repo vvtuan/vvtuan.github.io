@@ -13,6 +13,11 @@ author: Vũ Văn Tuấn
 
 navbar-links:
   About Me: "aboutme"
+  Mathematical resources:
+    - MIT OpenCourseWare: "https://ocw.mit.edu/courses/mathematics/"
+    - Harvard: "https://online-learning.harvard.edu/subject/mathematics/"
+    - Stanford: "https://statweb.stanford.edu/~candes/teaching/"
+    - Khan Academy: 
 #   Resources:
 #     - Beautiful Jekyll: "https://beautifuljekyll.com"
 #     - Learn markdown: "https://www.markdowntutorial.com/"
