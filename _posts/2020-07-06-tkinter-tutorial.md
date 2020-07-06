@@ -39,38 +39,114 @@ app = Application(master=root)
 app.mainloop()
 ```
 
-## Tk Concepts
+### Options
 
-### Widgets
+#### Setting Options
 
-### Geometry Management
+```python
+# Method 1
+fred = Button(self, fg="red", bg="blue")
 
-### Event Handling
+# Method 2
+fred["fg"] = "red"
+fred["bg"] = "blue"
 
-## Widgets
+# Method 3
+fred.config(fg="red", bg="blue")
+```
 
-## Geometry Manager
+#### Packer Options
 
-## Menus
+anchor, expand, fill, ipadx, ipady, padx, pady, side
 
-## Windows and Dialogs
+### Coupling Widget Variables
 
-## Organizing Complex Interfaces
+```python
+import tkinter as tk
 
-## Fonts, Colors, Images
+class App(tk.Frame):
+    def __init__(self, master=None):
+        super().__init__(master)
+        self.pack()
 
-## Canvas
+        self.entrythingy = tk.Entry()
+        self.entrythingy.pack()
 
-## Text
+        # here is the application variable
+        self.contents = tk.StringVar()
+        # set it to some value
+        self.contents.set("this is a variable")
+        # tell the entry widget to watch this variable
+        self.entrythingy["textvariable"] = self.contents
 
-## Tree
+        # and here we get a callback when the user hits return.
+        # we will have the program print out the value of the
+        # application variable when the user hits return
+        self.entrythingy.bind('<Key-Return>',
+                              self.print_contents)
 
-## Styles and Themes
+    def print_contents(self, event):
+        print("hi. contents of entry is now ---->",
+              self.contents.get())
+        
+root = tk.Tk()
+app = App(master=root)
+app.mainloop()
+```
 
-## IDLE Modernization
+### The Window Manager
+
+```python
+import tkinter as tk
+
+class App(tk.Frame):
+    def __init__(self, master=None):
+        super().__init__(master)
+        self.pack()
+
+# create the application
+myapp = App()
+
+#
+# here are method calls to the window manager class
+#
+myapp.master.title("My Do-Nothing Application")
+myapp.master.maxsize(1000, 400)
+
+# start the program
+myapp.mainloop()
+```
+
+### Bindings and Events
+
+## Working With Widgets
+
+| Widget Class | Description |
+| :--- | :-------- |
+| Label | A widget used to display text on the screen  |
+| Button | A button that can contain text and can perform an action when clicked |
+| Entry | A text entry widget that allows only a single line of text |
+| Text | A text entry widget that allows multiline text entry |
+| Frame | A rectangular region used to group related widgets or provide padding between widgets |
+| Listbox |  |
+| Checkbutton |  |
+| Radiobutton |  |
+| Combobox |  |
+| Scrollbar |  |
+| SizeGrip |  |
+| Progressbar |  |
+| Scale |  |
+| Spinbox |  |
+
+## Controlling Layout With Geometry Managers
+
+## Making Your Applications Interactive
+
+## Examples App
 
 ## Sources
-
-- [Stack Overflow](https://stackoverflow.com/)
+- [Python](https://docs.python.org/3/library/tkinter.html)
 - [Real Python](https://realpython.com/python-gui-tkinter/)
-- [TkDocs](https://tkdocs.com/tutorial/index.html)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/python-gui-tkinter/)
+- [DataCamp](https://www.datacamp.com/community/tutorials/gui-tkinter-python)
+- [Stack Overflow](https://stackoverflow.com/)
