@@ -138,7 +138,11 @@ myapp.mainloop()
 | Scale |  |
 | Spinbox |  |
 
-###  Getting user input with `Entry` widgets
+### Displaying Text and Images With Label Widgets
+
+### Displaying Clickable Buttons With Button Widgets
+
+###  Getting user input with Entry widgets
 
 **Example 1.**
 ```python
@@ -218,11 +222,96 @@ b_quit.pack()
 root.mainloop()
 ```
 
+### Getting Multiline User Input With Text Widgets
+
+**Example.**
+```python
+import tkinter as tk
+
+root = tk.Tk()
+
+# A text widget
+text_box = tk.Text()
+text_box.pack()
+
+# get the letters from the text box
+text_box.get("1.0") # <--  line = 1, column = 0
+text_box.get("1.0", "1.5") # <-- line = 1, 0 <= column < 5
+text_box.get("2.0", "2.5") # <-- line = 2, 0 <= column < 5
+
+# delete
+text_box.delete("1.0")
+text_box.delete("1.0", "1.4")
+text_box.delete("1.0", tk.END)
+text_box.insert("1.0", "Hello")
+
+# insert
+text_box.insert("2.0", "World")
+text_box.insert("2.0", "\nWorld")
+text_box.insert(tk.END, "Put me at the end!")
+text_box.insert(tk.END, "\nPut me on a new line!")
+
+root.mainloop()
+```
+
+### Assigning Widgets to Frames With Frame Widgets
+
+**Example.**
+```python
+import tkinter as tk
+
+root = tk.Tk()
+
+frame = tk.Frame()
+frame.pack()
+label = tk.Label(master=frame, text="Label")
+label.pack()
+
+frame_a = tk.Frame()
+label_a1 = tk.Label(master=frame_a, text="I'm in Frame A1", fg="blue", bg="yellow")
+label_a1.pack()
+label_a2 = tk.Label(master=frame_a, text="I'm in Frame A2", fg="red")
+label_a2.pack()
+
+frame_b = tk.Frame()
+label_b = tk.Label(master=frame_b, text="I'm in Frame B")
+label_b.pack()
+
+# Swap the order of `frame_a` and `frame_b`
+frame_b.pack()
+frame_a.pack()
+
+root.mainloop()
+```
+
+### Adjusting Frame Appearance With Reliefs
+
+
+
+
+### Understanding Widget Naming Conventions
+
 ## Controlling Layout With Geometry Managers
+
+### The .pack() Geometry Manager
+
+### The .place() Geometry Manager
+
+### The .grid() Geometry Manager
 
 ## Making Your Applications Interactive
 
+### Using Events and Event Handlers
+
+### Using .bind()
+
+### Using command
+
 ## Examples App
+
+### Building a Temperature Converter
+
+### Building a Text Editor
 
 ## Sources
 - [Python](https://docs.python.org/3/library/tkinter.html)
