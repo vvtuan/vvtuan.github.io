@@ -62,6 +62,7 @@ anchor, expand, fill, ipadx, ipady, padx, pady, side
 ### Coupling Widget Variables
 
 ```python
+
 import tkinter as tk
 
 class App(tk.Frame):
@@ -115,6 +116,7 @@ myapp.master.maxsize(1000, 400)
 
 # start the program
 myapp.mainloop()
+
 ```
 
 ### Bindings and Events
@@ -137,6 +139,54 @@ myapp.mainloop()
 | Progressbar |  |
 | Scale |  |
 | Spinbox |  |
+
+###  Getting user input with `Entry` widgets
+
+```python
+
+import tkinter as tk
+
+root = tk.Tk()
+
+l = tk.Label(text="Name")
+l.pack()
+
+e1 = tk.Entry(fg="yellow", bg="blue", width=50)
+e1.pack()
+
+def e1_callback():
+	print(e1.get())
+
+def e1_delete():
+	# e1.delete(first=0, last=3) # <-- 0 <= index < 3
+	e1.delete(0, tk.END)
+
+def e1_insert():
+	e1.insert(0, "My name is ... ")
+
+# Get
+b11 = tk.Button(text="Retrieving text from Entry")
+b11["command"] = e1_callback
+b11.pack()
+# Delete
+b12 = tk.Button(text="Deleting text from Entry")
+b12["command"] = e1_delete
+b12.pack()
+# Insert
+b13 = tk.Button(text="Inserting  text from Entry")
+b13["command"] = e1_insert
+b13.pack()
+
+# Quit
+def root_destroy():
+	root.destroy()
+b_quit = tk.Button(text="Quit")
+b_quit["command"] = root_destroy
+b_quit.pack()
+
+root.mainloop()
+
+```
 
 ## Controlling Layout With Geometry Managers
 
