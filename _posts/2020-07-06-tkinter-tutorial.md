@@ -62,7 +62,6 @@ anchor, expand, fill, ipadx, ipady, padx, pady, side
 ### Coupling Widget Variables
 
 ```python
-
 import tkinter as tk
 
 class App(tk.Frame):
@@ -116,7 +115,6 @@ myapp.master.maxsize(1000, 400)
 
 # start the program
 myapp.mainloop()
-
 ```
 
 ### Bindings and Events
@@ -142,8 +140,8 @@ myapp.mainloop()
 
 ###  Getting user input with `Entry` widgets
 
+**Example 1.**
 ```python
-
 import tkinter as tk
 
 root = tk.Tk()
@@ -185,7 +183,39 @@ b_quit["command"] = root_destroy
 b_quit.pack()
 
 root.mainloop()
+```
 
+**Example 2.**
+```python
+import tkinter as tk
+
+root = tk.Tk()
+
+l = tk.Label(text="Name")
+l.pack()
+
+# Method 1
+e1 = tk.Entry(fg="yellow", bg="blue", width=50)
+e1.pack()
+e1.delete(0, tk.END)
+e1.insert(0, "a default value")
+s = e1.get()
+
+# Method 2
+v = tk.StringVar()
+e2 = tk.Entry(root, textvariable=v)
+e2.pack()
+v.set("a default value")
+s2 = v.get()
+
+# Quit
+def root_destroy():
+	root.destroy()
+b_quit = tk.Button(text="Quit")
+b_quit["command"] = root_destroy
+b_quit.pack()
+
+root.mainloop()
 ```
 
 ## Controlling Layout With Geometry Managers
@@ -197,6 +227,8 @@ root.mainloop()
 ## Sources
 - [Python](https://docs.python.org/3/library/tkinter.html)
 - [Real Python](https://realpython.com/python-gui-tkinter/)
+- [TkinterBook](https://effbot.org/tkinterbook/)
+- [Python Course](https://www.python-course.eu/python_tkinter.php)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/python-gui-tkinter/)
 - [DataCamp](https://www.datacamp.com/community/tutorials/gui-tkinter-python)
 - [Stack Overflow](https://stackoverflow.com/)
