@@ -9,7 +9,7 @@ tags: [Markdown, Visual Studio Code]
 
 # 1. Markdown | Visual Studio Code
 
-- [1. Markdown | Visual Studio Code](#1-markdown--visual-studio-code)
+[1. Markdown | Visual Studio Code](#1-markdown--visual-studio-code)
   - [1.1. Mardown preview](#11-mardown-preview)
   - [1.2. Outline View](#12-outline-view)
   - [1.3. Compiling Markdown into HTML](#13-compiling-markdown-into-html)
