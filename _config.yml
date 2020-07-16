@@ -173,7 +173,7 @@ date_format: "%B %-d, %Y"
 
 # Output options (more information on Jekyll's site)
 timezone: "Asia/Ho_Chi_Minh"
-markdown: kramdown
+markdown: markdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
