@@ -9,6 +9,10 @@ tags: [Beamer, LaTeX]
 
 [TOC]
 
+## Learn
+
+https://en.wikibooks.org/wiki/LaTeX/Presentations
+
 ## Theme
 
 ```latex
@@ -16,10 +20,16 @@ tags: [Beamer, LaTeX]
 %\usetheme{Warsaw}
 ```
 
-
-
 ## Bookmark Vietnamese
 
 ```latex
 \documentclass[hyperref={unicode}]{beamer}
 ```
+
+## Not show header, footer
+
+```latex
+%\usepackage{beamerthemesplit}
+```
+
+## [Beamer automating numbering sections and subsections](https://tex.stackexchange.com/questions/400932/beamer-automating-numbering-sections-and-subsections)
