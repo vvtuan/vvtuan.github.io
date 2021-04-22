@@ -7,6 +7,17 @@ categories: [Beamer]
 tags: [Beamer, LaTeX]
 ---
 
+[TOC]
+
+## Theme
+
+```latex
+\usetheme{default}
+%\usetheme{Warsaw}
+```
+
+
+
 ## Bookmark Vietnamese
 
 ```latex
