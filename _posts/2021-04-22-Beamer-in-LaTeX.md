@@ -32,4 +32,4 @@ https://en.wikibooks.org/wiki/LaTeX/Presentations
 %\usepackage{beamerthemesplit}
 ```
 
-## [Beamer automating numbering sections and subsections](https://tex.stackexchange.com/questions/400932/beamer-automating-numbering-sections-and-subsections)
+## [Numbering sections and subsections](https://tex.stackexchange.com/questions/400932/beamer-automating-numbering-sections-and-subsections)
