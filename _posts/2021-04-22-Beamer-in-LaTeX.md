@@ -7,8 +7,6 @@ categories: [Beamer]
 tags: [Beamer, LaTeX]
 ---
 
-# Beamer in LaTeX
-
 ## Bookmark Vietnamese
 
 ```latex
