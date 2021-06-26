@@ -1,0 +1,108 @@
+<a   href="{{ site.baseurl }}/">
+            <!-- <img width="80%" src="{{ site.baseurl }}/images/logo.svg" /> -->
+            <!-- <img width="100%" src="{{ site.baseurl }}/images/logoTet.png" /> -->
+            <!-- <img width="100%" src="{{ site.baseurl }}/images/logo2.png" /> -->
+            <!-- <img width="100%" style="padding-bottom: 3mm;" src="{{ site.baseurl }}/images/logo_new.png" /> </a> -->
+            <img width="100%" style="padding-bottom: 3mm;" src="{{ site.baseurl }}/assets/latex/new_logo92.png" /> </a>
+          <!-- <img width="100%" style="padding-bottom: 3mm;" src="{{ site.baseurl }}/assets/latex/new_logo2_rau.png" /> </a> -->
+
+            <br>
+            <a href = "{{ site.baseurl }}/buymeacoffee">
+            <img width="100%" style="padding-bottom: 3mm;" src="{{ site.baseurl }}/images/Buymeacoffee_blue.png" />
+
+            <br>
+            <a href = "{{ site.baseurl }}/ebook">
+            <img width="100%" style="padding-bottom: 3mm;" src="{{ site.baseurl }}/images/ebook_logo.png" />
+
+
+            <!-- <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#074B80', 
+            'A40822MV');kofiwidget2.draw();</script>  --><!-- 
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="vuhuutiep@gmail.com">
+            <input type="hidden" name="lc" value="US">
+            <input type="hidden" name="item_name" value="I find machinelearningcoban.com helpful. I'd like to buy Tiep Vu a coffee ^^. (Thank you so much for your support.)">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="bn" value="PP-DonationsBF:Buymeacoffee.png:NonHostedGuest">
+            <input type="image" src="/images/Buymeacoffee_blue.png" border="0" style="padding-bottom: -9mm;" width = 100% name="submit" alt="PayPal - The safer, easier way to pay online!">
+            </form> -->
+
+            <!-- <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#805007', 'A40822MV');kofiwidget2.draw();</script>  -->
+
+          </a>
+
+          <!-- Google search -->
+         <!--  <table border="0">
+          <div id = "top-widget" style="width: 292px; margin-left: -13.5px; margin-top: -10px; margin-bottom: -15px;">
+         <script>
+           (function() {
+             var cx = '012053542614118746585:ktgei4l2oek';
+             var gcse = document.createElement('script');
+             gcse.type = 'text/javascript';
+             gcse.async = true;
+             gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+             var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(gcse, s);
+           })();
+         </script>
+         <gcse:search></gcse:search>
+          </div>
+          </table> -->
+
+          <!-- <nav>
+          
+            <div class="header">Popular</div>
+            <ul>
+              <li> (**): > 10k views</li>
+              <li> (*) : > 5k views</li>
+            </ul>
+          </nav> -->
+          
+
+          {% if page.category %}
+          <nav>
+          
+            <div class="header">Latest by category</div>
+            <ul>
+              {% for category in site.categories %}
+                {% if category[0] == page.category %}
+                  {% for post in category[1] offset:0 limit:5 %}
+                    <li><a style="text-align: left; color: #074B80;" href="{{ post.url }}">{{ post.title2 }}</a></li>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </nav>
+          {% endif %}
+
+
+
+          <nav>
+            <div class="header">Latest</div>
+              {% for post in site.posts limit:200 %}
+                <li><a style="text-align: left; color: #074B80"  href="{{ post.url }}">{{ post.title2 }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+
+          
+          
+          <!-- <img style = "transform: scaleX(1); width:100%; margin-left:00px;position: absolute;" src = "/images/mai.jpg"> -->
+         
+         <!--  {% if page.previous.url %} 
+            <nav>
+              <div class="header">Previous by date</div>
+              <ul>
+                <li><a style="text-align: left; font-family: 'Roboto Condensed', sans-serif; color: #074B80;" href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+              </ul>
+            </nav>
+          {% endif %} 
+          {% if page.next.url %} 
+            <nav>
+              <div class="header">Next by date</div>
+              <ul>
+                <li><a style="text-align: left; font-family: 'Roboto Condensed', sans-serif; color: #074B80;" href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+              </ul>
+            </nav>
+          {% endif %}  -->
