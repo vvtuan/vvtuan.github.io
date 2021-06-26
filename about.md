@@ -1,7 +1,11 @@
 ---
-layout: page
-title: About me
-subtitle: Nothing
+layout: post
+title: About
+permalink: /about/
+sc_project: 11387860
+sc_security: bf94eebb
 ---
 
-My name is Vu Van Tuan.
+Cảm ơn bạn đã ghé thăm blog của tôi. 
+
+Tôi là Vu Van Tuan.
