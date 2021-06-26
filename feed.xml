@@ -2,7 +2,7 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text" xml:lang="en">Machine Learning cơ bản</title>
+  <title type="text" xml:lang="en">VuVanTuan</title>
   <link type="application/atom+xml" href="{{ site.url }}/feed.xml" rel="self"/>
   <link type="text/html" href="{{ site.url }}" rel="alternate"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
